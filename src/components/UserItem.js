@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const UserItem = ({ user: { id, username, name } }) => {
   return (
     <div className="col-md-4">
-      <div className="card my-3">
-        <div className="card-body">
-          <Link to={`/users/${id}`}>
-            <h5>{username}</h5>
-          </Link>
-          <h6 className="card-subtitle mb-2 text-muted">{name}</h6>
+      <div class="wrapper" style={{ margin: 30 }}>
+        <div class="card">
+          <h1>
+            <Link to={`/users/${id}`}>
+              <span class="enclosed">{username}</span>
+            </Link>
+            {name}
+          </h1>
         </div>
       </div>
     </div>

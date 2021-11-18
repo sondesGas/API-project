@@ -1,4 +1,4 @@
-// import "./styles.css";
+import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +13,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   return (
-    <Fragment>
+    <div className="App">
       <Router>
         <Switch>
           <Route path="/" exact render={() => <Redirect to="/users" />} />
@@ -42,6 +42,6 @@ export default function App() {
           />
         </Switch>
       </Router>
-    </Fragment>
+    </div>
   );
 }

@@ -24,7 +24,9 @@ const UserList = ({ loading, setLoading, error, setError }) => {
   }, []);
   return (
     <div className="container py-5">
-      <h1>Users</h1>
+      <h1 style={{ fontSize: 50, color: "black", textAlign: "center" }}>
+        List of Users
+      </h1>
       <div className="row">
         {loading ? (
           <div className=" d-flex justify-content-center">

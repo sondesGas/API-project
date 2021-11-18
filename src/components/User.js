@@ -45,7 +45,7 @@ const User = ({ loading, setLoading, error, setError }) => {
       });*/
   }, []);
   return (
-    <div className="container py-5">
+    <div className="container py-5 user">
       {loading ? (
         <div className=" d-flex justify-content-center">
           <div
@@ -60,7 +60,7 @@ const User = ({ loading, setLoading, error, setError }) => {
       ) : (
         user && (
           <div>
-            <h1>{user.name}</h1>
+            <h1 style={{ fontSize: 40 }}>{user.name}</h1>
             <p>
               <span className="text-secondary">user name</span>: {user.username}
             </p>
